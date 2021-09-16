@@ -12,4 +12,4 @@ ______
 2. install associated python packages via pip    
 
 ## The calculation results interpretation
-<img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/resultsExplanation-01.jpg" width =40% height =40% div align="center">
+<img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/resultsExplanation-01.jpg" width =80% height =80% div align="center">
