@@ -9,7 +9,8 @@ Environemet: Successfully excucted in python 3.8
 ______
 ## Tutorials      
 1. download the zip file.
-2. install associated python packages via pip    
+2. install associated python packages via pip(MeshPy and ezdxf)
+(notes: Before install MeshPy, make sure VS C++ has been installed in your computer, C++ workload and win10SDK should be included when install VS C++)    
 
 ## The calculation results interpretation
 <img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/resultsExplanation-01.jpg" width =80% height =80% div align="center">
