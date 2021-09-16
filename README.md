@@ -13,3 +13,25 @@ ______
 
 ## The calculation results interpretation
 <img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/resultsExplanation-01.jpg" width =80% height =80% div align="center">
+
+## Example-1
+<img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/geometry-1.png" width =50% height =50% div align="center"><img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/finiteElementPlot-1.png" width =50% height =50% div align="center">
+
+```python
+from SecPropertyCalDxfPy import SecPropertyCalDxfPy
+
+dxfInstance = SecPropertyCalDxfPy("towerSection.dxf", numCircleSeg=50, numArcSeg=10, numEllipseSeg=20, numSplineSeg=20)
+A, Iyy, Izz, J, Cy, Cz = dxfInstance.getSectionProperty("粗实线", scaleFactor=50, meshSize=0.05)
+print("A=",A, " Iyy=",Iyy, " Izz=",Izz, " J=",J, " Cy=",Cy, " Cz=",Cz)
+```
+
+## Example-2
+<img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/geometry-2.png" width =50% height =50% div align="center"><img src="https://github.com/Junjun1guo/SecPropertyCalDxfPy/raw/main/finiteElementPlot-2.png" width =50% height =50% div align="center">
+
+```python
+from SecPropertyCalDxfPy import SecPropertyCalDxfPy
+
+dxfInstance = SecPropertyCalDxfPy("splines.dxf", numCircleSeg=50, numArcSeg=10, numEllipseSeg=20, numSplineSeg=20)
+A, Iyy, Izz, J, Cy, Cz = dxfInstance.getSectionProperty("粗实线", scaleFactor=100, meshSize=0.1)
+print("A=",A, " Iyy=",Iyy, " Izz=",Izz, " J=",J, " Cy=",Cy, " Cz=",Cz)
+```
